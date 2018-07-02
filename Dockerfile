@@ -8,6 +8,7 @@ RUN apt-get install -y net-tools \
                        vim \
                        iputils-ping \
                        libdbus-1-dev \
+                       libglib2.0-dev \
  && apt-get autoremove -y \
  && apt-get autoclean -y \
  && rm -rf /var/lib/apt/lists/* \
