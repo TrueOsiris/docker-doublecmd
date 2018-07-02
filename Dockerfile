@@ -9,6 +9,10 @@ RUN apt-get install -y net-tools \
                        iputils-ping \
                        libdbus-1-dev \
                        libglib2.0-dev \
+                       libx11-dev \
+                       libgtk2.0-dev \
+                       libqt4pas-dev \
+                       libqt5pas-dev \
  && apt-get autoremove -y \
  && apt-get autoclean -y \
  && rm -rf /var/lib/apt/lists/* \
