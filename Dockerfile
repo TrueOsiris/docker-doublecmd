@@ -11,7 +11,6 @@ RUN apt-get install -y net-tools \
                        libglib2.0-dev \
                        libx11-dev \
                        libgtk2.0-dev \
-                       libqt4pas-dev \
                        libqt5pas-dev \
  && apt-get autoremove -y \
  && apt-get autoclean -y \
