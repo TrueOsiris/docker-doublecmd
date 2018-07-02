@@ -12,4 +12,5 @@ RUN apt-get install -y net-tools \
  && rm -rf /var/lib/apt/lists/* \
  && rm -rf /tmp/* /var/tmp/* 
 
-CMD ["/sbin/my_init"]
+ENTRYPOINT ["tail", "-f", "/dev/null"]
+CMD ["bash"]
