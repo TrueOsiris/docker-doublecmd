@@ -13,9 +13,9 @@ RUN apt-get update \
                        libgtk2.0-dev \
                        libqt5pas-dev \
                        openssh-server \
-                       doublecmd-qt \
                        xpra \
                        xserver-xephyr \
+                       doublecmd-qt \
  && apt-get autoremove -y \
  && apt-get autoclean -y \
  && rm -rf /var/lib/apt/lists/* \
@@ -27,6 +27,8 @@ RUN sed -i 's/DisplayManager.requestPort/!DisplayManager.requestPort/g' /etc/X11
 RUN sed -i '/#any host/c\*' /etc/X11/xdm/Xaccess
 RUN ln -s /usr/bin/Xorg /usr/bin/X
 RUN echo X11Forwarding yes >> /etc/ssh/ssh_config
+# Fix PAM login issue with sshd
+RUN sed -i 's/session    required     pam_loginuid.so/#session    required     pam_loginuid.so/g' /etc/pam.d/sshd
 
 ENTRYPOINT ["tail", "-f", "/dev/null"]
 CMD ["bash"]
