@@ -12,6 +12,7 @@ RUN apt-get install -y net-tools \
                        libx11-dev \
                        libgtk2.0-dev \
                        libqt5pas-dev \
+                       doublecmd-qt \
  && apt-get autoremove -y \
  && apt-get autoclean -y \
  && rm -rf /var/lib/apt/lists/* \
