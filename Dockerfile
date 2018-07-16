@@ -1,6 +1,8 @@
 FROM ubuntu:17.10
 MAINTAINER Tim Chaubet "tim@chaubet.be"
 
+RUN mkdir /run/sshd
+
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update \
  && apt-get dist-upgrade -y \
