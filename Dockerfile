@@ -37,6 +37,9 @@ RUN sed -i 's/session    required     pam_loginuid.so/#session    required     p
 
 EXPOSE 22
 
-ENTRYPOINT ["/usr/sbin/sshd", "-D"]
+ADD . /
+
+#ENTRYPOINT ["/usr/sbin/sshd", "-D"]
 #ENTRYPOINT ["tail", "-f", "/dev/null"]
 #CMD ["bash"]
+CMD ["/bin/bash", "/startup.sh"]
