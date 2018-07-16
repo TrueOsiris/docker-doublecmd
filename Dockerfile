@@ -19,6 +19,7 @@ RUN apt-get update \
                        xserver-xephyr \
                        xdm \
                        xvfb \
+                       xterm \
                        doublecmd-qt \
  && apt-get autoremove -y \
  && apt-get autoclean -y \
