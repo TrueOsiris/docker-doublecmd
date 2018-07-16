@@ -27,8 +27,8 @@ RUN apt-get update \
  
 # used this info from https://github.com/rogaha/docker-desktop/blob/master/Dockerfile 
 # Configuring xdm to allow connections from any IP address and ssh to allow X11 Forwarding. 
-#RUN sed -i 's/DisplayManager.requestPort/!DisplayManager.requestPort/g' /etc/X11/xdm/xdm-config
-#RUN sed -i '/#any host/c\*' /etc/X11/xdm/Xaccess
+RUN sed -i 's/DisplayManager.requestPort/!DisplayManager.requestPort/g' /etc/X11/xdm/xdm-config
+RUN sed -i '/#any host/c\*' /etc/X11/xdm/Xaccess
 RUN ln -s /usr/bin/Xorg /usr/bin/X
 RUN echo X11Forwarding yes >> /etc/ssh/ssh_config
 # Fix PAM login issue with sshd
