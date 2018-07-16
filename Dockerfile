@@ -12,6 +12,7 @@ RUN apt-get update \
                        libx11-dev \
                        libgtk2.0-dev \
                        libqt5pas-dev \
+                       openssh-server \
                        doublecmd-qt \
                        xpra \
                        xserver-xephyr \
