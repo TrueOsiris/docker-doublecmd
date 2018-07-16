@@ -17,6 +17,8 @@ RUN apt-get update \
                        openssh-server \
                        xpra \
                        xserver-xephyr \
+                       xdm \
+                       xvfb \
                        doublecmd-qt \
  && apt-get autoremove -y \
  && apt-get autoclean -y \
