@@ -14,9 +14,6 @@ adduser docker sudo
 # Set the default shell as bash for docker user.
 chsh -s /bin/bash docker
 
-# Copy the config files into the docker directory
-cd /src/config/ && sudo -u docker cp -R .[a-z]* [a-z]* /home/docker/
-
 # restarts the xdm service
 /etc/init.d/xdm restart
 
