@@ -13,6 +13,8 @@ RUN apt-get install -y net-tools \
                        libgtk2.0-dev \
                        libqt5pas-dev \
                        doublecmd-qt \
+                       xpra \
+                       xserver-xephyr \
  && apt-get autoremove -y \
  && apt-get autoclean -y \
  && rm -rf /var/lib/apt/lists/* \
