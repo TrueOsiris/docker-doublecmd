@@ -32,7 +32,8 @@ RUN apt-get update \
 RUN sed -i 's/DisplayManager.requestPort/!DisplayManager.requestPort/g' /etc/X11/xdm/xdm-config
 RUN sed -i '/#any host/c\*' /etc/X11/xdm/Xaccess
 #RUN ln -s /usr/bin/Xorg /usr/bin/X 2>&1
-RUN echo X11Forwarding yes >> /etc/ssh/ssh_config
+RUN echo "X11Forwarding yes" >> /etc/ssh/ssh_config
+RUN echo "ForwardX11 yes" >> /etc/ssh/ssh_config
 # Fix PAM login issue with sshd
 RUN sed -i 's/session    required     pam_loginuid.so/#session    required     pam_loginuid.so/g' /etc/pam.d/sshd
 
