@@ -39,4 +39,4 @@ EXPOSE 22
 
 #ENTRYPOINT ["tail", "-f", "/dev/null"]
 ENTRYPOINT ["/usr/sbin/sshd", "-D"]
-CMD ["bash"]
+#CMD ["bash"]
