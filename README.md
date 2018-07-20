@@ -19,7 +19,9 @@ Container for https://github.com/doublecmd/doublecmd
     'trueosiris/doublecmd'
 ```
 
-- In windows, install XMing and putty+plink
+- In windows, install XMing and putty+plink (I actually use kitty instead of putty)
+- In putty, make sure you enable X11 forwarding for the Connection -> SSH -> X11
+  The X display location should be "1.2.3.4:0.0" where 1.2.3.4 is the lan-ip of the windowsclient you want to use doublecmd on.
 - Use a .bat file to lauch doublecommander with the following entries.
 ```
     "C:\Program Files (x86)\Xming\Xming.exe" :0 -clipboard -multiwindow -ac
