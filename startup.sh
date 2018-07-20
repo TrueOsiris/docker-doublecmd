@@ -4,7 +4,9 @@
 mkdir /var/run/sshd 
 
 # Add docker user and generate a random password with 12 characters that includes at least one capital letter and number.
-DOCKER_PASSWORD=`pwgen -c -n -1 12`
+if [ -z "$DOCKER_PASSWORD" ]; then
+  DOCKER_PASSWORD=`pwgen -c -n -1 12`
+fi
 echo User: docker Password: $DOCKER_PASSWORD
 DOCKER_ENCRYPYTED_PASSWORD=`perl -e 'print crypt('"$DOCKER_PASSWORD"', "aa"),"\n"'`
 useradd -m -d /home/docker -p $DOCKER_ENCRYPYTED_PASSWORD docker
