@@ -20,6 +20,7 @@ Container for https://github.com/doublecmd/doublecmd
 
 - In windows, install XMing
 - Use a .bat file to lauch doublecommander with the following entries.
-
+```
     "C:\Program Files (x86)\Xming\Xming.exe" :0 -clipboard -multiwindow -ac
     plink -ssh docker@CONTAINERIP -pw doublecommander -X -P 22 doublecmd
+```
