@@ -32,10 +32,8 @@ RUN apt-get update \
 # Configuring xdm to allow connections from any IP address and ssh to allow X11 Forwarding. 
 RUN sed -i 's/DisplayManager.requestPort/!DisplayManager.requestPort/g' /etc/X11/xdm/xdm-config
 RUN sed -i '/#any host/c\*' /etc/X11/xdm/Xaccess
-#RUN ln -s /usr/bin/Xorg /usr/bin/X 2>&1
-RUN echo "X11Forwarding yes" >> /etc/ssh/ssh_config
+RUN echo "X11Forwarding yes" >> /etc/ssh/sshd_config
 RUN echo "ForwardX11 yes" >> /etc/ssh/ssh_config
-#RUN echo "X11DisplayOffset 10" >> /etc/ssh/sshd_config
 # Fix PAM login issue with sshd
 RUN sed -i 's/session    required     pam_loginuid.so/#session    required     pam_loginuid.so/g' /etc/pam.d/sshd
 
