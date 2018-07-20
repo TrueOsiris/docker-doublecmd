@@ -22,5 +22,5 @@ Container for https://github.com/doublecmd/doublecmd
 - Use a .bat file to lauch doublecommander with the following entries.
 ```
     "C:\Program Files (x86)\Xming\Xming.exe" :0 -clipboard -multiwindow -ac
-    plink -ssh docker@CONTAINERIP -pw doublecommander -X -P 22 doublecmd
+    plink -ssh docker@10.10.71.2 -pw doublecommander -X -P 22 "export DISPLAY==1.2.3.4:0.0; DISPLAY=1.2.3.4:0.0; doublecmd"
 ```
