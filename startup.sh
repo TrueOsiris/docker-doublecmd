@@ -19,5 +19,9 @@ chsh -s /bin/bash docker
 # restarts the xdm service
 /etc/init.d/xdm restart
 
+# export the display settings
+export DISPLAY==$DISPLAY
+DISPLAY=$DISPLAY
+
 # Start the ssh service
 /usr/sbin/sshd -D
