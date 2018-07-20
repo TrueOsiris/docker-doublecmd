@@ -3,7 +3,7 @@ Container for https://github.com/doublecmd/doublecmd
 
 - Create the container on the macvlan network (br0, for example) with a LAN IP of choice.
 
-'''
+```
     docker run -d \
     --name='doublecmd' \
     --net='br0' \
@@ -16,7 +16,7 @@ Container for https://github.com/doublecmd/doublecmd
     -v '/tmp/.X11-unix':'/tmp/.X11-unix':'rw' \
     --env="QT_X11_NO_MITSHM=1" 
     'trueosiris/doublecmd'
-'''
+```
 
 - In windows, install XMing
 - Use a .bat file to lauch doublecommander with the following entries.
