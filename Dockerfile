@@ -41,7 +41,4 @@ EXPOSE 22
 
 ADD . /
 
-#ENTRYPOINT ["/usr/sbin/sshd", "-D"]
-#ENTRYPOINT ["tail", "-f", "/dev/null"]
-#CMD ["bash"]
 CMD ["/bin/bash", "/startup.sh"]
