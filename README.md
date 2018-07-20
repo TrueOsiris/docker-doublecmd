@@ -19,7 +19,7 @@ Container for https://github.com/doublecmd/doublecmd
     'trueosiris/doublecmd'
 ```
 
-- In windows, install XMing
+- In windows, install XMing and putty+plink
 - Use a .bat file to lauch doublecommander with the following entries.
 ```
     "C:\Program Files (x86)\Xming\Xming.exe" :0 -clipboard -multiwindow -ac
