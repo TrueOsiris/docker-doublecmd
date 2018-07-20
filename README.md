@@ -9,7 +9,7 @@ Container for https://github.com/doublecmd/doublecmd
     --name='doublecmd' \
     --net='br0' \
     --ip='10.10.71.2' \
-    -e 'DISPLAY'='10.10.32.1:0.0' \
+    -e 'DISPLAY'='1.2.3.4:0.0' \
     -e 'DOCKER_PASSWORD'='doublecommander' \
     -v '/tmp/.X11-unix':'/tmp/.X11-unix':'rw' \
     --env="QT_X11_NO_MITSHM=1" 
