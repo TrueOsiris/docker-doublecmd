@@ -9,9 +9,6 @@ Container for https://github.com/doublecmd/doublecmd
     --name='doublecmd' \
     --net='br0' \
     --ip='10.10.71.2' \
-    -e TZ="Europe/Paris" \
-    -e HOST_OS="unRAID" \
-    -e 'TCP_PORT_22'='3322' \
     -e 'DISPLAY'='10.10.32.1:0.0' \
     -e 'DOCKER_PASSWORD'='doublecommander' \
     -v '/tmp/.X11-unix':'/tmp/.X11-unix':'rw' \
