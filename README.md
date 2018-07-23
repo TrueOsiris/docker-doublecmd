@@ -12,7 +12,7 @@ Container for https://github.com/doublecmd/doublecmd
     -e 'DISPLAY'='1.2.3.4:0.0' \
     -e 'DOCKER_PASSWORD'='doublecommander' \
     -v '/tmp/.X11-unix':'/tmp/.X11-unix':'rw' \
-    -v /home/docker/.config:/home/docker/.config \
+    -v '/your-hostpath/doublecmd/config':'/home/docker/.config' \
     --env="QT_X11_NO_MITSHM=1" 
     'trueosiris/doublecmd'
 ```
