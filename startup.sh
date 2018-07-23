@@ -20,8 +20,18 @@ chsh -s /bin/bash docker
 /etc/init.d/xdm restart
 
 # export the display settings
-export DISPLAY==$DISPLAY
+export DISPLAY=$DISPLAY
 DISPLAY=$DISPLAY
+
+# home dir + config
+mkdir -p /home/docker/config/doublecmd
+FILE=/home/docker/config/doublecmd/doublecmd.xml
+if [ -f $FILE ]; then
+  chmod 777 $FILE   
+else
+   echo "<SetPropertyError>2</SetPropertyError>" > $FILE
+   chmod 777 $FILE   
+fi
 
 # Start the ssh service
 /usr/sbin/sshd -D
