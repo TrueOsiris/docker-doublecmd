@@ -24,8 +24,8 @@ export DISPLAY=$DISPLAY
 DISPLAY=$DISPLAY
 
 # home dir + config
-mkdir -p /home/docker/config/doublecmd
-FILE=/home/docker/config/doublecmd/doublecmd.xml
+mkdir -p /home/docker/.config/doublecmd
+FILE=/home/docker/.config/doublecmd/doublecmd.xml
 if [ -f $FILE ]; then
   chmod 777 $FILE   
 else
