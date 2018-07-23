@@ -1,7 +1,7 @@
 # docker-doublecmd
 Container for https://github.com/doublecmd/doublecmd
 
-- Create the container on the macvlan network (br0, for example) with a LAN IP of choice.
+- Create the container on the macvlan network (br0, for example) with a LAN IP of choice. In my example, it's 10.10.71.2.
 - if you don't specify a password, there is one generated for you, which you can read from the container log.
 
 ```
