@@ -22,7 +22,6 @@ RUN apt-get update \
                        xterm \
                        doublecmd-qt \
                        pwgen \
-                       mc \
  && apt-get autoremove -y \
  && apt-get autoclean -y \
  && rm -rf /var/lib/apt/lists/* \
