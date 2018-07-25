@@ -1,6 +1,6 @@
 # docker-doublecmd
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/trueosiris/doublecmd.svg)](https://hub.docker.com/r/trueosiris/doublecmd/) [![Docker Stars](https://img.shields.io/docker/stars/trueosiris/doublecmd.svg)](https://hub.docker.com/r/trueosiris/doublecmd/) [![Docker Automated buil](https://img.shields.io/docker/automated/trueosiris/doublecmd.svg)](https://hub.docker.com/r/trueosiris/doublecmd/) [![Docker Build Statu](https://img.shields.io/docker/build/trueosiris/doublecmd.svg)](https://hub.docker.com/r/trueosiris/doublecmd/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/trueosiris/doublecmd.svg)](https://hub.docker.com/r/trueosiris/doublecmd/) [![Docker Stars](https://img.shields.io/docker/stars/trueosiris/doublecmd.svg)](https://hub.docker.com/r/trueosiris/doublecmd/) [![Docker Automated buil](https://img.shields.io/docker/automated/trueosiris/doublecmd.svg)](https://hub.docker.com/r/trueosiris/doublecmd/) [![Docker Build Statu](https://img.shields.io/docker/build/trueosiris/doublecmd.svg)](https://hub.docker.com/r/trueosiris/doublecmd/) ![GitHub last commit](https://img.shields.io/github/last-commit/trueosiris/doublecmd.svg)
 
 
 Container for https://github.com/doublecmd/doublecmd
