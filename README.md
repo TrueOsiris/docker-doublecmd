@@ -1,6 +1,6 @@
 # docker-doublecmd
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/trueosiris/doublecmd.svg)](https://dockerhub.com/trueosiris/doublecmd) 
+[![DockerPulls](https://img.shields.io/docker/pulls/trueosiris/doublecmd.svg)](https://dockerhub.com/trueosiris/doublecmd) 
 
 Container for https://github.com/doublecmd/doublecmd
 
