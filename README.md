@@ -3,7 +3,12 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/trueosiris/doublecmd.svg)](https://hub.docker.com/r/trueosiris/doublecmd/) [![Docker Stars](https://img.shields.io/docker/stars/trueosiris/doublecmd.svg)](https://hub.docker.com/r/trueosiris/doublecmd/) [![Docker Automated buil](https://img.shields.io/docker/automated/trueosiris/doublecmd.svg)](https://hub.docker.com/r/trueosiris/doublecmd/) [![Docker Build Statu](https://img.shields.io/docker/build/trueosiris/doublecmd.svg)](https://hub.docker.com/r/trueosiris/doublecmd/) ![GitHub last commit](https://img.shields.io/github/last-commit/trueosiris/docker-doublecmd.svg)
 
 
-Container for https://github.com/doublecmd/doublecmd
+Container for Double Commander, in order to run in in a graphical emulator, like Xming on windows.
+
+Sources:
+https://github.com/svn2github/doublecmd
+https://github.com/svn2github/doublecmd-test
+https://github.com/doublecmd/doublecmd
 
 
 - Create the container on the macvlan network (br0, for example) with a LAN IP of choice. In my example, it's 10.10.71.2.
