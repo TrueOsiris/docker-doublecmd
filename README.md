@@ -5,12 +5,12 @@
 
 Container for Double Commander, in order to run in in a graphical emulator, like Xming on windows.
 
-Sources:
-https://github.com/svn2github/doublecmd
-https://github.com/svn2github/doublecmd-test
-https://github.com/doublecmd/doublecmd
+## Sources:
+- https://github.com/svn2github/doublecmd
+- https://github.com/svn2github/doublecmd-test
+- https://github.com/doublecmd/doublecmd
 
-
+## How to install:
 - Create the container on the macvlan network (br0, for example) with a LAN IP of choice. In my example, it's 10.10.71.2.
 - if you don't specify a password, there is one generated for you, which you can read from the container log.
 
